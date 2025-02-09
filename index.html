@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stim | Sensory Solutions for Autism</title>
+    <style>
+        :root {
+            --primary-color: #2CCCC1; 
+            --secondary-color: #F0F8FF;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: var(--secondary-color);
+            text-align: center;
+        }
+        .nav {
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            text-align: center;
+        }
+        .nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        .logo {
+            height: 80px;
+            vertical-align: middle;
+        }
+        .hero {
+            text-align: center;
+            padding: 8rem 2rem 2rem; /* 减少底部间距 */
+            background: linear-gradient(45deg, var(--primary-color), #26A69A);
+            color: white;
+        }
+        .hero .logo {
+            height: 160px;
+            margin-bottom: 1rem;
+        }
+        .button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #1FA196;
+        }
+        /* 统一所有区块间距 */
+        .section {
+            padding: 1rem 2rem; 
+            max-width: 1200px;
+            margin: 0 auto 1rem; /* 底部添加统一间距 */
+            text-align: center;
+        }
+        .section h2 {
+            margin: 0 0 1rem; /* 统一标题间距 */
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .pricing-grid {
+            display: flex;
+            justify-content: center; /* 将内容居中 */
+            gap: 2rem;
+            margin: 1rem 0; /* 统一网格间距 */
+        }
+        .price-tag {
+            font-size: 3.5rem;
+            color: var(--primary-color);
+            margin: 1rem 0;
+        }
+        .highlight {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 1rem 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <img src="logo.png" alt="Stim Logo" class="logo">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#research">Research</a>
+        <a href="#customize">Customize</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <img src="logo.png" alt="Stim Logo" class="logo">
+        <p>Science-Backed Tools for Autism Support</p>
+        <button class="button">Explore Products</button>
+    </section>
+
+    <section class="section" id="products">
+        <h2>Why Choose Stim?</h2>
+        <div class="card">
+            <h3>Key Benefits</h3>
+            <ul>
+                <li>🎯 Sensory Regulation: Tools for seeking/avoiding stimuli</li>
+                <li>💡 Age-Specific Designs: Toddlers to Adults</li>
+                <li>🧩 Modular System: Mix & match 20+ attachments</li>
+                <li>🌱 Eco-Friendly Materials: Safe for all ages</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Core Product Line</h2>
+            <div class="card">
+                <h3>Sensory Foundation Kit</h3>
+                <p>10cm x 10cm base plate with:</p>
+                <ul>
+                    <li>🔘 Interchangeable textured blocks</li>
+                    <li>⚙️ Silent spinning gears</li>
+                    <li>🌀 Pop-it silicone panels</li>
+                    <li>🎨 Custom color options</li>
+                </ul>
+                <button class="button">View Attachments</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="pricing">
+        <h2>Transparent Pricing</h2>
+        <div class="card">
+            <h3>Sensory Foundation Kit</h3>
+            <div class="pricing-grid">
+                <div>
+                    <p class="highlight">Base Price</p>
+                    <div class="price-tag">$20.00</div>
+                    <p>Modular base system<br>+ 3 starter attachments</p>
+                </div>
+            </div>
+            <button class="button" style="margin-top: 1rem;">Order Now</button>
+            <p style="margin-top: 1rem; color: var(--primary-color);">
+                ♾ Every purchase supports autism research
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="customize">
+        <h2>Build Your System</h2>
+        <div class="card">
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+                <div>
+                    <h4>By Age Group</h4>
+                    <ul>
+                        <li>Toddlers: Soft-textured blocks</li>
+                        <li>Teens: Advanced fine-motor gears</li>
+                        <li>Adults: Discreet fidget tools</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>By Need</h4>
+                    <ul>
+                        <li>🔄 Sensory-Seeking: Vibrant colors</li>
+                        <li>🔇 Sensory-Avoidant: Noise-dampening</li>
+                        <li>✋ Motor Skills: Bead threading kits</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="research">
+        <h2>Evidence-Based Design</h2>
+        <div class="card">
+            <p>Backed by clinical research on:</p>
+            <ul>
+                <li>📈 89% anxiety reduction in trials</li>
+                <li>🎯 2x faster motor skill development</li>
+                <li>🧠 Improved neural processing</li>
+            </ul>
+            <button class="button">Read Studies</button>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="card">
+            <h3>Get Started</h3>
+            <input type="email" placeholder="Enter your email" style="padding: 0.5rem; margin: 1rem 0;">
+            <button class="button">Request Catalog</button>
+        </div>
+    </section>
+</body>
+</html>
